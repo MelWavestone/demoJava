@@ -23,7 +23,7 @@ public class HelloWorld
       this.name = name;
    }
    
-   public static void main(String[] args) {
+   public main() {
       name = "Mélanie";
       System.out.println("---------------------------------------------");
       System.out.println("   Bonjour " + name + ", comment vas tu?  ");
