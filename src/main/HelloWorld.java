@@ -1,6 +1,6 @@
 public class HelloWorld 
 {
-   public String name = "";
+   private String name = "";
    public String getName() 
    {
       return name;
@@ -24,10 +24,12 @@ public class HelloWorld
    }
    
    public static void main(String[] args) {
-      name = "Mélanie";
-      System.out.println("---------------------------------------------");
-      System.out.println("   Bonjour " + name + ", comment vas tu?  ");
-      System.out.println("---------------------------------------------");                   
+	
+      	HelloWorld H = new HelloWorld();
+	H.name = "Mélanie";
+      	System.out.println("---------------------------------------------");
+      	System.out.println("   Bonjour " + H.name + ", comment vas tu?  ");
+      	System.out.println("---------------------------------------------");                   
    }
 		
 }
