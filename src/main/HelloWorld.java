@@ -26,7 +26,7 @@ public class HelloWorld
    public static void main(String[] args) {
 	
       	HelloWorld H = new HelloWorld();
-	H.name = "Mélanie";
+	H.name = "Thibaut";
       	System.out.println("---------------------------------------------");
       	System.out.println("   Bonjour " + H.name + ", comment vas tu?  ");
       	System.out.println("---------------------------------------------");                   
