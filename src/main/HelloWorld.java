@@ -1,6 +1,6 @@
 public class HelloWorld 
 {
-	private String name = "";
+   public String name = "";
    public String getName() 
    {
       return name;
@@ -23,7 +23,7 @@ public class HelloWorld
       this.name = name;
    }
    
-   public void main(String[] args) {
+   public static void main(String[] args) {
       name = "Mélanie";
       System.out.println("---------------------------------------------");
       System.out.println("   Bonjour " + name + ", comment vas tu?  ");
