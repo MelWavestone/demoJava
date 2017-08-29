@@ -17,7 +17,7 @@ public class TestHelloWorld {
       assertEquals(h.getMessage(),"Hello!");
    }
 
-   public void testHelloWorld() 
+   public void TestApp() 
    {
       h.setName("World");
       assertEquals(h.getName(),"World");
