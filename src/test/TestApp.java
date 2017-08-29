@@ -1,14 +1,26 @@
-package org.effectivejava.examples;
+import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Test;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+public class TestHelloWorld {
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
+   private HelloWorld h;
+	
+   public void setUp() throws Exception 
+   {
+      h = new HelloWorld();
+   }
 
+   public void testHelloEmpty() 
+   {
+      assertEquals(h.getName(),"");
+      assertEquals(h.getMessage(),"Hello!");
+   }
+
+   public void testHelloWorld() 
+   {
+      h.setName("World");
+      assertEquals(h.getName(),"World");
+      assertEquals(h.getMessage(),"Hello World!");
+   }
 }
